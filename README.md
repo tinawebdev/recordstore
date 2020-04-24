@@ -1,24 +1,10 @@
-# README
+# Ruby on Rails API with Vue.js
+A simple application where Ruby on Rails is backend and Vue.js + Axios is front-end.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Used in this build
+- Rails '6.0.2.2'
+- Ruby '2.6.3'
+- Gem bcrypt '3.1.7'
+- Gem rack-cors
+- Gem redis '4.0'
+- Gem jwt-sessions
