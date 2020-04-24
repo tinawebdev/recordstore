@@ -1,4 +1,4 @@
-class SinginController < ApplicationController
+class SigninController < ApplicationController
   before_action :authorize_access_request!, only: [:destroy]
 
   def create
@@ -9,7 +9,7 @@ class SinginController < ApplicationController
       session = JWTSessions::Session.new(payload: payload, refresh_by_access_allowed: true)
       tokens = session.login
 
-      responce.set_cookie(JWTSessions.access_cookie,
+      response.set_cookie(JWTSessions.access_cookie,
                           value: tokens[:access],
                           httponly: true,
                           secure: Rails.env.production?)
